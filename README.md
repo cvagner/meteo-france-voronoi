@@ -9,6 +9,8 @@ La carte est construite avec [Openlayers](https://openlayers.org/) et affiche un
 
 L'application est compilée avec [Yarn](https://yarnpkg.com/) et [Vite](https://vitejs.dev/).
 
+Une démonstration est disponible [ici](https://cvagner.github.io/meteo-france-voronoi/).
+
 ![Exemple de carte](carte.png "Exemple de carte").
 
 ## Récupération de la dernière version des stations
