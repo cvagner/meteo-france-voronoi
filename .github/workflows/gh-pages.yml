@@ -36,7 +36,10 @@ jobs:
       run: yarn build
 
     - name: Download GeoJSON file
-      run: mkdir -p dist/data && curl -o dist/data/stations-meteo.geojson https://donneespubliques.meteofrance.fr/metadonnees_publiques/fiches/fiches.json
+      # Oops, le fichier produit le 08/04/2024 est mal formé : "features" n'est plus un tableau ! (OK le 05/04/2024)
+      # TODO restituer lorsque ça sera de retour !
+      #run: mkdir -p dist/data && curl -o dist/data/stations-meteo.geojson https://donneespubliques.meteofrance.fr/metadonnees_publiques/fiches/fiches.json
+      run: cp -r data dist/data
 
     - name: Setup Pages
       id: pages
